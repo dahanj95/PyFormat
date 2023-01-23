@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyFormat", "PyFormat\PyFormat.csproj", "{B6194210-6CDD-4047-AD7D-7941D88515FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6194210-6CDD-4047-AD7D-7941D88515FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6194210-6CDD-4047-AD7D-7941D88515FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6194210-6CDD-4047-AD7D-7941D88515FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6194210-6CDD-4047-AD7D-7941D88515FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27867DD4-DA4B-449B-A98D-6B8C919CAA78}
+	EndGlobalSection
+EndGlobal
