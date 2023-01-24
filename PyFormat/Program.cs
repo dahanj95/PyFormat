@@ -8,7 +8,7 @@ StringBuilder builder = new();
 foreach(string line in lines)
 {
     Header header = new(line);
-    builder.AppendLine(header.ToString());
+    builder.AppendLine(header.Formatted);
 }
 
 File.WriteAllText(".\\headers_fixed.txt", builder.ToString());
