@@ -1,14 +1,25 @@
 ﻿using PyFormat.Models;
+using System.Diagnostics;
 using System.Text;
 
-string[] lines = File.ReadAllLines(".\\headers.txt");
+Queue<string> lines = new(File.ReadAllLines(".\\headers.txt"));
+string template = File.ReadAllText(".\\template.txt");
 
 StringBuilder builder = new();
 
-foreach(string line in lines)
+while (lines.Count > 0)
 {
+    string line = lines.Dequeue();
     Header header = new(line);
+
+    if (lines.Count == 0)
+    {
+        builder.Append(header.Formatted);
+        break;
+    }
+       
     builder.AppendLine(header.Formatted);
 }
 
-File.WriteAllText(".\\headers_fixed.txt", builder.ToString());
+template = template.Replace("%REPLACE_ME%", builder.ToString());
+File.WriteAllText(".\\headers_fixed.txt", template);

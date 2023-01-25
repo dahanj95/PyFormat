@@ -13,7 +13,7 @@ namespace PyFormat.Models
 
         public Header(string line)
         {
-            Formatted = Regex.Replace(line, @"(.*):\s(.*)", "'$1':'$2'");
+            Formatted = Regex.Replace(line, @"(.*):\s(.*)", "\t'$1':'$2'");
         }
     }
 }
